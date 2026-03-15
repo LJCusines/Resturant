@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>L J Cusines - Food Order</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;font-family:Arial, Helvetica, sans-serif}
+
+body{background:#f6f6f6}
+
+header{
+background:#d62828;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:16px 40px;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+letter-spacing:1px;
+}
+
+nav a{
+color:white;
+margin:0 15px;
+text-decoration:none;
+font-size:16px;
+}
+
+.login-btn{
+background:white;
+color:#d62828;
+padding:10px 18px;
+border-radius:25px;
+font-weight:bold;
+}
+
+.hero{
+text-align:center;
+padding:80px 20px;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:10px;
+color:#333;
+}
+
+.hero p{
+color:#666;
+margin-bottom:40px;
+}
+
+.options{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.card{
+background:white;
+width:320px;
+padding:30px;
+border-radius:12px;
+border:2px solid #e63946;
+text-align:left;
+transition:0.2s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+.card h3{
+margin-top:10px;
+font-size:22px;
+}
+
+.card p{
+margin-top:8px;
+color:#666;
+}
+
+.icon{
+font-size:40px;
+}
+
+@media(max-width:768px){
+.hero h1{font-size:34px}
+.options{flex-direction:column;align-items:center}
+}
+
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">L J Cusines</div>
+<nav>
+<a href="#">Order</a>
+<a href="contact.html">Contact</a>
+
+
+
+<a class="login-btn" href="#">Sign Up/Login</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Enjoy tasty meals,<br>wherever you are.</h1>
+<p>How do you want to order your meal?</p>
+
+<div class="options">
+
+<div class="card">
+<div class="icon">🏪</div>
+<h3>Pickup</h3>
+<p>Take your meal at the restaurant</p>
+</div>
+
+<div class="card">
+<div class="icon">🛵</div>
+<h3>Delivery</h3>
+<p>Receive your food at your doorstep.</p>
+</div>
+
+</div>
+</section>
+
+
+
+<section class="how-it-works">
+<h2>How it works</h2>
+
+<div class="steps">
+
+<div class="step">
+<div class="circle red">📍</div>
+<h3>Select nearest location</h3>
+<p>Select the restaurant closest to your pick-up/delivery location.</p>
+</div>
+
+<div class="step">
+<div class="circle box">🍱</div>
+<h3>Choose your meal</h3>
+<p>Place your order by choosing from numerous delicacies on our menu.</p>
+</div>
+
+<div class="step">
+<div class="circle yellow">😍</div>
+<h3>Enjoy your meal</h3>
+<p>Pick up your tasty meal in‑store or have it delivered to your doorstep.</p>
+</div>
+
+</div>
+</section>
+
+<style>
+.how-it-works{
+padding:90px 20px;
+text-align:center;
+background:#f3f3f3 url("https://www.transparenttextures.com/patterns/food.png");
+}
+
+.how-it-works h2{
+font-size:42px;
+margin-bottom:60px;
+color:#333;
+font-weight:700;
+}
+
+.steps{
+display:flex;
+justify-content:center;
+align-items:flex-start;
+gap:80px;
+flex-wrap:wrap;
+}
+
+.step{
+max-width:280px;
+}
+
+.circle{
+width:140px;
+height:140px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:55px;
+margin:0 auto 25px auto;
+}
+
+.red{
+background:#d62828;
+color:white;
+}
+
+.box{
+background:#f8d7da;
+}
+
+.yellow{
+background:#ffd43b;
+}
+
+.step h3{
+font-size:24px;
+margin-bottom:10px;
+color:#333;
+}
+
+.step p{
+color:#666;
+font-size:15px;
+line-height:1.6;
+}
+
+@media(max-width:768px){
+.steps{
+flex-direction:column;
+align-items:center;
+gap:50px;
+}
+}
+</style>
+
+
+
+<section class="about">
+<div class="about-container">
+
+<div class="about-text">
+<h2>About L J Cusines</h2>
+<p>
+L J Cusines is committed to delivering delicious meals quickly and conveniently to our customers. Whether you prefer pickup or doorstep delivery, we make it easy to enjoy your favorite dishes wherever you are.
+</p>
+
+<p>
+Our menu is carefully prepared with quality ingredients and a passion for great taste. With multiple restaurant locations and a simple ordering process, getting your favorite meal has never been easier.
+</p>
+
+<a class="about-btn" href="#menu">Explore Menu</a>
+</div>
+
+<div class="about-image">
+<img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="food" />
+</div>
+
+</div>
+</section>
+
+<style>
+.about{
+padding:90px 20px;
+background:white;
+}
+
+.about-container{
+max-width:1100px;
+margin:auto;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:60px;
+flex-wrap:wrap;
+}
+
+.about-text{
+flex:1;
+min-width:280px;
+}
+
+.about-text h2{
+font-size:40px;
+margin-bottom:20px;
+color:#d62828;
+}
+
+.about-text p{
+color:#555;
+line-height:1.7;
+margin-bottom:18px;
+font-size:16px;
+}
+
+.about-btn{
+display:inline-block;
+background:#d62828;
+color:white;
+padding:12px 26px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+margin-top:10px;
+}
+
+.about-btn:hover{
+background:#b91d1d;
+}
+
+.about-image{
+flex:1;
+min-width:280px;
+}
+
+.about-image img{
+width:100%;
+border-radius:16px;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+@media(max-width:768px){
+.about-container{
+flex-direction:column;
+text-align:center;
+}
+}
+</style>
+
+
+
+<section id="menu" class="menu">
+<h2>Our Menu</h2>
+<p class="menu-sub">Freshly prepared meals from L J Cusines</p>
+
+<div class="menu-grid">
+
+<div class="menu-card">
+<img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d" alt="jollof rice">
+<h3>Jollof Rice</h3>
+<p>Rich tomato rice served with grilled chicken.</p>
+<span class="price">₦4,500</span>
+</div>
+
+<div class="menu-card">
+<img src="https://images.unsplash.com/photo-1550547660-d9450f859349" alt="burger">
+<h3>Beef Burger</h3>
+<p>Juicy grilled beef burger with fresh toppings.</p>
+<span class="price">₦3,800</span>
+</div>
+
+<div class="menu-card">
+<img src="https://images.unsplash.com/photo-1544025162-d76694265947" alt="pasta">
+<h3>Creamy Pasta</h3>
+<p>Italian pasta in a creamy garlic sauce.</p>
+<span class="price">₦4,200</span>
+</div>
+
+<div class="menu-card">
+<img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="fried chicken">
+<h3>Fried Chicken</h3>
+<p>Crispy golden chicken served hot.</p>
+<span class="price">₦3,500</span>
+</div>
+
+</div>
+</section>
+
+<style>
+.menu{
+padding:90px 20px;
+background:#f6f6f6;
+text-align:center;
+}
+
+.menu h2{
+font-size:40px;
+color:#d62828;
+margin-bottom:10px;
+}
+
+.menu-sub{
+color:#666;
+margin-bottom:50px;
+}
+
+.menu-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+gap:30px;
+max-width:1100px;
+margin:auto;
+}
+
+.menu-card{
+background:white;
+border-radius:16px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+transition:0.25s;
+}
+
+.menu-card:hover{
+transform:translateY(-6px);
+}
+
+.menu-card img{
+width:100%;
+height:170px;
+object-fit:cover;
+}
+
+.menu-card h3{
+margin:15px 0 5px 0;
+font-size:20px;
+}
+
+.menu-card p{
+font-size:14px;
+color:#666;
+padding:0 15px;
+}
+
+.price{
+display:block;
+margin:15px 0 20px 0;
+font-weight:bold;
+color:#d62828;
+font-size:18px;
+}
+</style>
+
+
+
+<!-- Contact Us Section -->
+<section class="contact-us">
+  <div class="contact-container">
+    <h2>Contact Us</h2>
+    <p>Have questions or want to get in touch? Fill out the form below!</p>
+
+    <form action="contact.html">
+      <button class="open-contact-btn" type="submit">Go to Full Contact Page</button>
+    </form>
+
+    <div class="social-box">
+      <h3>Connect With Us</h3>
+      <ul class="social-links">
+        <li>
+          <a href="https://www.facebook.com/LauraEzinwa" target="_blank">
+            Facebook: Laura Ezinwa
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/cookaddicts" target="_blank">
+            Instagram: @cookaddicts
+          </a>
+        </li>
+        <li>
+          <a href="https://www.tiktok.com/@cookaddicts" target="_blank">
+            TikTok: @cookaddicts
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<style>
+/* Contact Us Styles */
+.contact-us {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.contact-container h2 {
+  text-align: center;
+  color: #333333;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.contact-container p {
+  text-align: center;
+  color: #666666;
+  margin-bottom: 25px;
+  font-size: 1rem;
+}
+
+/* Button to contact page */
+.open-contact-btn {
+  width: 100%;
+  padding: 14px;
+  background: #007BFF;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 30px;
+}
+
+.open-contact-btn:hover {
+  background: #0056b3;
+}
+
+/* Social Section */
+.social-box {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.social-box h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+}
+
+.social-links li {
+  margin: 10px 0;
+}
+
+.social-links a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #007BFF;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .contact-container {
+    padding: 30px 20px;
+  }
+}
+</style>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+
+  <!-- Google Font (Optional, for nicer text) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    .contact-wrapper {
+      max-width: 900px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    p.subtitle {
+      text-align: center;
+      color: #666;
+      margin-bottom: 40px;
+      font-size: 1rem;
+    }
+
+    /* FORM */
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    form .full {
+      grid-column: span 2;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 140px;
+    }
+
+    button {
+      grid-column: span 2;
+      padding: 15px;
+      font-size: 1.1rem;
+      background: #007bff;
+      border: none;
+      color: #fff;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+
+    /* SOCIAL SECTION */
+    .social-section {
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .social-section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: #222;
+    }
+
+    .social-links {
+      list-style: none;
+      padding: 0;
+    }
+
+    .social-links li {
+      margin: 12px 0;
+    }
+
+    .social-links a {
+      text-decoration: none;
+      font-size: 1.1rem;
+      color: #007bff;
+      transition: 0.3s;
+      font-weight: 500;
+    }
+
+    .social-links a:hover {
+      color: #0056b3;
+      text-decoration: underline;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 700px) {
+      form {
+        grid-template-columns: 1fr;
+      }
+
+      button {
+        grid-column: span 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="contact-wrapper">
+    <h1>Contact Us</h1>
+    <p class="subtitle">We’d love to hear from you — use the form below or reach out through our socials.</p>
+
+    <form>
+      <div>
+        <label>Name</label>
+        <input type="text" placeholder="Your Name" required>
+      </div>
+      
+      <div>
+        <label>Email</label>
+        <input type="email" placeholder="Your Email" required>
+      </div>
+
+      <div class="full">
+        <label>Subject</label>
+        <input type="text" placeholder="What is this about?" required>
+      </div>
+
+      <div class="full">
+        <label>Your Message</label>
+        <textarea placeholder="Write your message here..." required></textarea>
+      </div>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <!-- Social Section -->
+    <div class="social-section">
+      <h2>Connect With Us</h2>
+      <ul class="social-links">
+        <li><a href="https://www.facebook.com/LauraEzinwa" target="_blank">Facebook: Laura Ezinwa</a></li>
+        <li><a href="https://www.instagram.com/cookaddicts" target="_blank">Instagram: @cookaddicts</a></li>
+        <li><a href="https://www.tiktok.com/@cookaddicts" target="_blank">TikTok: @cookaddicts</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+</body>
+</html>
